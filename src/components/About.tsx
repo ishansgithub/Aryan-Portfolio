@@ -57,7 +57,7 @@ const About = () => {
             >
               <Bug className="mt-1 flex-shrink-0" />
               <p>
-                When I'm not writing code that breaks codes, you'll find me playing table tennis in the neighborhood, creating innovative projects with my 3D printer, or exploring new areas in Japan.
+                When I'm not writing code that breaks codes, you'll find me playing table tennis in the neighborhood, creating innovative projects with my 3D printer.
               </p>
             </motion.div>
           </div>
