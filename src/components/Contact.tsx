@@ -9,6 +9,13 @@ const Contact = () => {
     threshold: 0.1,
   });
 
+  const socialLinks = [
+    { Icon: Mail, href: "mailto:aryanrohit9911@gmail.com" },
+    { Icon: Github, href: "https://github.com/aryan-mrrobot" },
+    { Icon: Twitter, href: "https://x.com/aryan_gladiator" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/aryan-rohit/" }
+  ];
+
   return (
     <section className="py-20 bg-black text-green-500" id="contact">
       <div className="container mx-auto px-4">
@@ -41,10 +48,10 @@ const Contact = () => {
             transition={{ delay: 0.6 }}
             className="flex justify-center space-x-8"
           >
-            {[Github, Twitter, Linkedin].map((Icon, index) => (
+            {socialLinks.map(({ Icon, href }, index) => (
               <motion.a
                 key={index}
-                href="#"
+                href={href}
                 className="text-green-500 hover:text-green-400 transition-colors p-3 border border-green-500/20 rounded-lg hover:border-green-500/40"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
